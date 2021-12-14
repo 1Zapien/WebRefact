@@ -1,3 +1,38 @@
 .intro {
   display: flex;
+  flex-direction: column-reverse;
+}
+
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro__info p {
+  text-align: center;
+  line-height: 1.45rem;
+  font-size: 16px;
+  color: #333533;
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: #333533;
+}
+
+.intro__info button {
+  border: none;
+  border-radius: 10px;
+  background-color: #87bfc1;
+  margin: 1rem;
+  padding: 0.9rem;
+  color: #fbfbf2;
+}
+
+.intro__image {
+  width: 80%;
+  align-self: center;
 }

@@ -10,11 +10,8 @@ function App() {
     <MainLayout>
       <Routes>
         <Route path="/" element={<AllProjects />}></Route>
-        <Route
-          path="/review-project"
-          element={<ProjectReviewLanding />}
-        ></Route>
         <Route path="/submit-project" element={<SubmitNewProject />}></Route>
+        <Route path="/my-projects" element={<ProjectReviewLanding />}></Route>
       </Routes>
     </MainLayout>
   );

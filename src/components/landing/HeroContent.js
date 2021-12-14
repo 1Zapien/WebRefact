@@ -1,4 +1,5 @@
 import classes from "./HeroContent.module.css";
+import { Link } from "react-router-dom";
 
 function HeroContent() {
   return (
@@ -9,6 +10,9 @@ function HeroContent() {
           Get feedback on your personal project from other users. Improve your
           coding skills while working on your personal project.
         </p>
+        <Link to="/submit-project">
+          <button type="button">Submit Project</button>
+        </Link>
       </div>
       <img
         className={classes.intro__image}

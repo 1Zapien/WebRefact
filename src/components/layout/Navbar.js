@@ -7,13 +7,13 @@ function NavBar() {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link to="/">All Projects</Link>
-          </li>
-          <li>
-            <Link to="/review-project">Project Review</Link>
+            <Link to="/">Projects</Link>
           </li>
           <li>
             <Link to="/submit-project">Submit Project</Link>
+          </li>
+          <li>
+            <Link to="/my-projects">My Projects</Link>
           </li>
         </ul>
       </nav>
