@@ -53,7 +53,7 @@ function SubmitProjectForm(props) {
         ></textarea>
       </div>
       <div className="">
-        <button>Add Meetup</button>
+        <button>Add Project</button>
       </div>
     </form>
   );

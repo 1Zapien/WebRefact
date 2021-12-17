@@ -26,6 +26,8 @@
   color: black;
 }
 
-.nav a:hover {
-  color: yellow;
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #88c0c2;
 }

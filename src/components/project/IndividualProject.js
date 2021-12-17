@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function IndividualProject(props) {
   return (
     <ul>
@@ -9,10 +11,9 @@ function IndividualProject(props) {
             <p>{element.description}</p>
             <p>{element.questions}</p>
           </div>
-          <div className=""></div>
+          <NavLink to={`/my-projects/${element.id}`}> Go to Project</NavLink>
         </li>
       ))}
-      ;
     </ul>
   );
 }
