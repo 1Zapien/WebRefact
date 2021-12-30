@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import IndividualProject from "./IndividualProject";
+import classes from "./Projects.module.css";
 
 function Projects() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +37,7 @@ function Projects() {
   }
 
   return (
-    <div>
+    <div className={classes.main}>
       <h1>All Projects</h1>
       <IndividualProject eachProject={loadedProjects} />
     </div>

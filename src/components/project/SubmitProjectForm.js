@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import classes from "./SubmitProjectForm.module.css";
 
 function SubmitProjectForm(props) {
   const inputNameRef = useRef();
@@ -26,15 +27,15 @@ function SubmitProjectForm(props) {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className="">
+      <div className={classes.form__section}>
         <label htmlFor="project-name">Project Name</label>
         <input type="text" required id="project-name" ref={inputNameRef} />
       </div>
-      <div className="">
+      <div className={classes.form__section}>
         <label htmlFor="website-link">Website Link</label>
         <input type="url" required id="website-link" ref={inputUrl} />
       </div>
-      <div className="">
+      <div className={classes.form__section}>
         <label htmlFor="project-description">Project Description</label>
         <textarea
           id="project-description"
@@ -43,7 +44,7 @@ function SubmitProjectForm(props) {
           ref={inputDescription}
         ></textarea>
       </div>
-      <div className="">
+      <div className={classes.form__section}>
         <label htmlFor="project-questions">Questions for others?</label>
         <textarea
           id="project-questions"
