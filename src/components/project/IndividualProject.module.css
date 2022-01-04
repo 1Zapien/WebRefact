@@ -21,12 +21,13 @@ ul {
   background-color: #ffffff;
   border-radius: 25px;
   padding: 1rem 0rem;
+  overflow: auto;
 }
 
 .project__button {
   text-decoration: none;
-  color: black;
-  border: 2px black solid;
+  color: white;
+  background-color: #438082;
   border-radius: 10px;
   padding: 0.5rem 0.5rem;
 }
