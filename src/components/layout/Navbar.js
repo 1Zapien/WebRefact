@@ -12,7 +12,7 @@ function NavBar() {
         <ul>
           <li>
             <NavLink
-              to="/"
+              to="/home"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
               Projects

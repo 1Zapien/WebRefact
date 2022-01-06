@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import classes from "./IndividualProject.module.css";
 
 function IndividualProject(props) {
@@ -14,12 +14,19 @@ function IndividualProject(props) {
             <p>{screenShot + element.url + ".com"}</p>
             <p>{element.description}</p>
             <p>{element.questions}</p>
-            <NavLink
-              className={classes.project__button}
-              to={`/my-projects/${element.id}`}
-            >
-              GIVE FEEDBACK
-            </NavLink>
+            <Routes>
+              <Route
+                path="/home"
+                element={
+                  <NavLink
+                    className={classes.project__button}
+                    to={`/my-projects/${element.id}`}
+                  >
+                    GIVE FEEDBACK
+                  </NavLink>
+                }
+              />
+            </Routes>
           </div>
         </li>
       ))}
