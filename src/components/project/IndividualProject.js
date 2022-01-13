@@ -1,8 +1,9 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classes from "./IndividualProject.module.css";
 
 function IndividualProject(props) {
   let screenShot = "//image.thum.io/get/";
+  console.log(window.location.pathname);
   return (
     <ul className={classes.project}>
       {props.eachProject.map(element => (
@@ -14,19 +15,16 @@ function IndividualProject(props) {
             <p>{screenShot + element.url + ".com"}</p>
             <p>{element.description}</p>
             <p>{element.questions}</p>
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <NavLink
-                    className={classes.project__button}
-                    to={`/my-projects/${element.id}`}
-                  >
-                    GIVE FEEDBACK
-                  </NavLink>
-                }
-              />
-            </Routes>
+            {window.location.pathname === "/home" ? (
+              <NavLink
+                className={classes.project__button}
+                to={`/my-projects/${element.id}`}
+              >
+                GIVE FEEDBACK
+              </NavLink>
+            ) : (
+              ""
+            )}
           </div>
         </li>
       ))}
