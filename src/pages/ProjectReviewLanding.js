@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import IndividualProject from "../components/project/IndividualProject";
 import { useState, useEffect } from "react";
+import PageWithComments from "../components/comments/PageWithComments";
 
 function ProjectReviewLanding() {
   const [loadedProjects, setLoadedProjects] = useState({});
@@ -40,6 +41,7 @@ function ProjectReviewLanding() {
     <section>
       <h1>Project Review Page</h1>
       <IndividualProject eachProject={loadedProjects} />
+      <PageWithComments></PageWithComments>
     </section>
   );
 }
