@@ -3,7 +3,7 @@ import commentBox from "commentbox.io";
 
 class PageWithComments extends React.Component {
   componentDidMount() {
-    this.removeCommentBox = commentBox("my-project-id");
+    this.removeCommentBox = commentBox(process.env.REACT_APP_COMMENT);
   }
 
   componentWillUnmount() {
