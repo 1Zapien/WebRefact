@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
+  background-image: url("/src/images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain 90%;
+  background-position-y: 1rem;
 }
 
 .intro__info {
@@ -13,27 +18,35 @@
 .intro__info p {
   text-align: center;
   line-height: 1.45rem;
-  font-size: 16px;
+  font-size: 18px;
   color: #333533;
+  margin: 0.5rem 0rem;
 }
 
 .intro__title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.5rem;
   text-align: center;
   color: #333533;
+  margin: 0.5rem 0rem;
 }
 
 .intro__info button {
   border: none;
   border-radius: 10px;
-  background-color: #87bfc1;
+  background-color: #6998ab;
   margin: 1rem;
-  padding: 0.9rem;
+  padding: 1rem 1.5rem;
   color: #fbfbf2;
 }
 
+.intro__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .intro__image {
-  width: 80%;
   align-self: center;
+  height: 350px;
+  width: 80%;
 }

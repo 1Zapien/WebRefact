@@ -1,4 +1,5 @@
 import classes from "./HeroContent.module.css";
+import hero from "../../images/Brainstorming.svg";
 import { Link } from "react-router-dom";
 
 function HeroContent() {
@@ -14,13 +15,9 @@ function HeroContent() {
           <button type="button">Submit Project</button>
         </Link>
       </div>
-      <img
-        className={classes.intro__image}
-        src={
-          "https://global-uploads.webflow.com/5e3ce2ec7f6e53c045fe7cfa/604222e273860c0a9c396005_603dd7b33291d9d0231f3528_Frame-142.png"
-        }
-        alt="Hero"
-      ></img>
+      <div className={classes.intro__background}>
+        <img className={classes.intro__image} src={hero} alt="Hero"></img>
+      </div>
     </section>
   );
 }
