@@ -1,8 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0rem;
   flex: 1;
+  min-width: 375px;
 }
 
 .main__content {

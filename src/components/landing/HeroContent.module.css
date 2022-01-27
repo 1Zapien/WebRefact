@@ -1,12 +1,13 @@
 .intro {
   display: flex;
   flex-direction: column-reverse;
-  width: 100%;
   background-image: url("/src/images/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain 90%;
   background-position-y: 1rem;
+  display: flex;
+  padding: 0rem 2rem;
 }
 
 .intro__info {
@@ -38,6 +39,10 @@
   margin: 1rem;
   padding: 1rem 1.5rem;
   color: #fbfbf2;
+  cursor: pointer;
+}
+.intro__info button:hover {
+  background-color: #406882;
 }
 
 .intro__background {

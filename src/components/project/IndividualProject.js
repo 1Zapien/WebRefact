@@ -9,11 +9,11 @@ function IndividualProject(props) {
       {props.eachProject.map(element => (
         <li key={element.id}>
           <div className={classes.project__info}>
-            <h3 className={classes.project__title}>{element.name}</h3>
-            <address>{element.url}</address>
             <img src={screenShot + element.url} alt="Logo" />
-            <p>{screenShot + element.url + ".com"}</p>
+            <h3 className={classes.project__title}>{element.name}</h3>
             <p>{element.description}</p>
+            <address>{element.url}</address>
+            {/* <p>{screenShot + element.url + ".com"}</p> */}
             <p>{element.questions}</p>
             {window.location.pathname === "/home" ? (
               <NavLink
