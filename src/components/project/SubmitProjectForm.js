@@ -26,37 +26,46 @@ function SubmitProjectForm(props) {
   }
 
   return (
-    <form onSubmit={submitHandler}>
-      <div className={classes.form__section}>
-        <label htmlFor="project-name">Project Name</label>
-        <input type="text" required id="project-name" ref={inputNameRef} />
-      </div>
-      <div className={classes.form__section}>
-        <label htmlFor="website-link">Website Link</label>
-        <input type="url" required id="website-link" ref={inputUrl} />
-      </div>
-      <div className={classes.form__section}>
-        <label htmlFor="project-description">Project Description</label>
-        <textarea
-          id="project-description"
-          required
-          rows="5"
-          ref={inputDescription}
-        ></textarea>
-      </div>
-      <div className={classes.form__section}>
-        <label htmlFor="project-questions">Questions for others?</label>
-        <textarea
-          id="project-questions"
-          required
-          rows="5"
-          ref={inputQuestion}
-        ></textarea>
-      </div>
-      <div className="">
-        <button>Add Project</button>
-      </div>
-    </form>
+    <div className={classes.form__card}>
+      <form onSubmit={submitHandler} className={classes.form_content}>
+        <h1>Submit your project</h1>
+        <div className={classes.form__section}>
+          <label htmlFor="project-name">Project Name</label>
+          <input
+            type="text"
+            required
+            id="project-name"
+            ref={inputNameRef}
+            placeholder="Enter project name"
+          />
+        </div>
+        <div className={classes.form__section}>
+          <label htmlFor="website-link">Website Link</label>
+          <input type="url" required id="website-link" ref={inputUrl} />
+        </div>
+        <div className={classes.form__section}>
+          <label htmlFor="project-description">Project Description</label>
+          <textarea
+            id="project-description"
+            required
+            rows="5"
+            ref={inputDescription}
+          ></textarea>
+        </div>
+        <div className={classes.form__section}>
+          <label htmlFor="project-questions">Questions for others?</label>
+          <textarea
+            id="project-questions"
+            required
+            rows="5"
+            ref={inputQuestion}
+          ></textarea>
+        </div>
+        <div className={classes.form__submit}>
+          <button className={classes.project__submit}>Add Project</button>
+        </div>
+      </form>
+    </div>
   );
 }
 

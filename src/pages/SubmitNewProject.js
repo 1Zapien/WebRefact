@@ -16,7 +16,6 @@ function SubmitNewProject() {
   }
   return (
     <section>
-      <h1>Submit your project</h1>
       <SubmitProjectForm
         onSubmitProject={SubmitProjectHandler}
       ></SubmitProjectForm>

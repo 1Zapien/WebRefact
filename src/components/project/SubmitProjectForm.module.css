@@ -1,18 +1,73 @@
-.form__section {
-  padding: 0.5rem 0rem;
-  width: 50vw;
+.form__card {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* h1 {
+  align-self: center;
+} */
+
+.form_content {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  width: 75%;
+  flex: 1;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .form_content {
+    width: 45%;
+  }
 }
 
 .form__section label {
   display: block;
   margin: 0.5rem 0rem;
+  width: 100%;
+  color: #1a374d;
 }
 
 .form__section input {
-  height: 2rem;
-  border: 0.5px solid rgb(58, 55, 48);
+  height: 2.345rem;
+  border: 1.5px solid #1a374d;
+  border-radius: 5px;
+  width: 100%;
+}
+.form__section input[type="text"] {
+  padding-left: 0.5rem;
+  color: black;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+.form__section textarea {
+  border: 0.5px solid #1a374d;
   border-radius: 10px;
-  background-color: hsl(210, 9%, 96%);
+  width: 100%;
+  color: black;
+}
+
+.project__submit {
+  border: none;
+  border-radius: 10px;
+  background-color: #6998ab;
+  margin: 1rem 0rem;
+  padding: 0.75rem 1rem;
+  color: #fbfbf2;
+  cursor: pointer;
+}
+
+.form__submit {
+  align-self: end;
+}
+
+.project__submit:hover {
+  background-color: #406882;
 }
