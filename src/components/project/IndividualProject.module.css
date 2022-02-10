@@ -20,19 +20,29 @@ ul {
   margin: 1rem auto;
   background-color: #ffffff;
   border-radius: 25px;
-  padding: 1rem 0rem;
   overflow: auto;
+  border: 1px solid #747069;
 }
+.project__img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1111%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(26%2c 55%2c 77%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c471.073C87.265%2c462.96%2c162.299%2c414.62%2c235.152%2c365.903C306.801%2c317.991%2c379.313%2c267.887%2c418.587%2c191.162C458.806%2c112.589%2c467.015%2c22.015%2c456.01%2c-65.564C444.87%2c-154.216%2c417.655%2c-243.824%2c355.823%2c-308.322C295.304%2c-371.451%2c203.569%2c-383.696%2c121.659%2c-414.333C32.618%2c-447.638%2c-51.302%2c-507.926%2c-145.601%2c-495.872C-245.295%2c-483.128%2c-355.48%2c-437.092%2c-401.052%2c-347.513C-446.679%2c-257.826%2c-373.603%2c-153.892%2c-370.751%2c-53.306C-368.532%2c24.981%2c-403.537%2c99.997%2c-386.2%2c176.372C-366.218%2c264.399%2c-336.795%2c357.645%2c-265.035%2c412.403C-191.615%2c468.428%2c-91.957%2c479.622%2c0%2c471.073' fill='%23162e41'%3e%3c/path%3e%3cpath d='M1440 980.985C1516.981 972.563 1560.4569999999999 889.608 1630.212 855.976 1714.1309999999999 815.515 1835.667 841.578 1888.414 764.784 1940.003 689.6759999999999 1886.4 587.816 1876.625 497.223 1866.442 402.852 1898.94 287.282 1829.867 222.178 1759.8519999999999 156.185 1644.37 201.825 1549.083 188.49900000000002 1470.815 177.553 1398.057 139.38299999999998 1319.864 150.85500000000002 1234.516 163.377 1154.307 199.459 1089.141 255.97899999999998 1017.371 318.226 953.152 394.318 932.2909999999999 487.002 910.682 583.01 916.362 692.716 972.6800000000001 773.418 1027.017 851.281 1134.2440000000001 862.2 1221.018 900.742 1293.534 932.951 1361.124 989.614 1440 980.985' fill='%231e4059'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1111'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
 .project__title {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  margin: 1rem 0rem;
 }
 
 .project__info p {
   text-align: center;
+  color: #747069;
+  font-size: 16px;
 }
 
 .project__button {
-  width: 75%;
+  width: 60%;
   text-decoration: none;
   color: white;
   background-color: #6998ab;
@@ -47,6 +57,6 @@ ul {
 }
 
 .project__info img {
-  width: 75%;
-  max-height: 40%;
+  width: 50%;
+  padding: 1rem 0rem;
 }

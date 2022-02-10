@@ -1,15 +1,28 @@
 import { NavLink } from "react-router-dom";
 import classes from "./IndividualProject.module.css";
+import { useEffect } from "react";
 
 function IndividualProject(props) {
   let screenShot = "//image.thum.io/get/";
-  console.log(window.location.pathname);
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/1Zapien/RunDay/languages")
+      .then(response => response.json())
+      .then(data => {
+        for (var key in data) {
+          console.log(key);
+        }
+      });
+  }, []);
+
   return (
     <ul className={classes.project}>
       {props.eachProject.map(element => (
         <li key={element.id}>
           <div className={classes.project__info}>
-            <img src={screenShot + element.url} alt="Logo" />
+            <div className={classes.project__img}>
+              <img src={screenShot + element.url} alt="Logo" />
+            </div>
             <h3 className={classes.project__title}>{element.name}</h3>
             <p>{element.description}</p>
             <address>{element.url}</address>

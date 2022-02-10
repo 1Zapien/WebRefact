@@ -3,8 +3,11 @@ import IndividualProject from "./IndividualProject";
 import classes from "./Projects.module.css";
 
 function Projects() {
+  const [postsPerPage, setpostsPerPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [loadedProjects, setLoadedProjects] = useState([]);
+  const [postsToShow, setPostsToShow] = useState([]);
+  const [next, setNext] = useState(3);
 
   useEffect(() => {
     setIsLoading(true);
@@ -24,9 +27,24 @@ function Projects() {
         projects.reverse();
         setLoadedProjects(projects);
         setIsLoading(false);
-        console.log(projects);
+        setpostsPerPage(4);
       });
   }, []);
+
+  const handleShowMorePosts = () => {
+    loopWithSlice(0, next + postsPerPage);
+    setNext(next + postsPerPage);
+  };
+
+  const loopWithSlice = (start, end) => {
+    const slicedProjects = loadedProjects.slice(start, end);
+    // arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedProjects];
+    setPostsToShow(slicedProjects);
+  };
+
+  useEffect(() => {
+    loopWithSlice(0, postsPerPage);
+  }, [postsPerPage]);
 
   if (isLoading) {
     return (
@@ -38,8 +56,8 @@ function Projects() {
 
   return (
     <div className={classes.main}>
-      <h1>All Projects</h1>
-      <IndividualProject eachProject={loadedProjects} />
+      <IndividualProject eachProject={postsToShow} />
+      <button onClick={handleShowMorePosts}>Load more</button>
     </div>
   );
 }
