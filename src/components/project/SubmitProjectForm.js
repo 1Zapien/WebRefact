@@ -4,6 +4,7 @@ import classes from "./SubmitProjectForm.module.css";
 function SubmitProjectForm(props) {
   const inputNameRef = useRef();
   const inputUrl = useRef();
+  const inputSourceUrl = useRef();
   const inputDescription = useRef();
   const inputQuestion = useRef();
 
@@ -12,12 +13,14 @@ function SubmitProjectForm(props) {
 
     const projectName = inputNameRef.current.value;
     const projectUrl = inputUrl.current.value;
+    const projectSourceUrl = inputSourceUrl.current.value;
     const projectDescription = inputDescription.current.value;
     const projectQuestion = inputQuestion.current.value;
 
     const projectData = {
       name: projectName,
       url: projectUrl,
+      sourceUrl: projectSourceUrl,
       description: projectDescription,
       questions: projectQuestion
     };
@@ -42,6 +45,10 @@ function SubmitProjectForm(props) {
         <div className={classes.form__section}>
           <label htmlFor="website-link">Website Link</label>
           <input type="url" required id="website-link" ref={inputUrl} />
+        </div>
+        <div className={classes.form__section}>
+          <label htmlFor="source-link">GitHub Link</label>
+          <input type="url" required id="source-link" ref={inputSourceUrl} />
         </div>
         <div className={classes.form__section}>
           <label htmlFor="project-description">Project Description</label>

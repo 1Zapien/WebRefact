@@ -7,3 +7,23 @@
 h1 {
   text-align: center;
 }
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+button {
+  background-color: #6998ab;
+  border: none;
+  color: #eff3f2;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #828282;
+  color: #eff3f2;
+}
