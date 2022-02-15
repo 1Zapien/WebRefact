@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCallback, useState, useEffect } from "react";
 import IndividualProject from "./IndividualProject";
 import classes from "./Projects.module.css";
 
@@ -36,15 +36,23 @@ function Projects() {
     setNext(next + postsPerPage);
   };
 
-  const loopWithSlice = (start, end) => {
-    const slicedProjects = loadedProjects.slice(start, end);
-    // arrayForHoldingPosts = [...arrayForHoldingPosts, ...slicedProjects];
-    setPostsToShow(slicedProjects);
-  };
+  const loopWithSlice = useCallback(
+    (start, end) => {
+      const slicedProjects = loadedProjects.slice(start, end);
+      setPostsToShow(slicedProjects);
+    },
+    [loadedProjects]
+  );
+
+  // const loopWithSlice = (start, end) => {
+  //   const slicedProjects = loadedProjects.slice(start, end);
+
+  //   setPostsToShow(slicedProjects);
+  // };
 
   useEffect(() => {
     loopWithSlice(0, postsPerPage);
-  }, [postsPerPage]);
+  }, [postsPerPage, loopWithSlice]);
 
   if (isLoading) {
     return (

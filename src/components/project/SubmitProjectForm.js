@@ -44,11 +44,23 @@ function SubmitProjectForm(props) {
         </div>
         <div className={classes.form__section}>
           <label htmlFor="website-link">Website Link</label>
-          <input type="url" required id="website-link" ref={inputUrl} />
+          <input
+            type="url"
+            required
+            id="website-link"
+            ref={inputUrl}
+            placeholder="Enter project Url"
+          />
         </div>
         <div className={classes.form__section}>
           <label htmlFor="source-link">GitHub Link</label>
-          <input type="url" required id="source-link" ref={inputSourceUrl} />
+          <input
+            type="url"
+            required
+            id="source-link"
+            ref={inputSourceUrl}
+            placeholder="GitHub Url"
+          />
         </div>
         <div className={classes.form__section}>
           <label htmlFor="project-description">Project Description</label>
@@ -57,6 +69,7 @@ function SubmitProjectForm(props) {
             required
             rows="5"
             ref={inputDescription}
+            placeholder="Enter a short description of you project"
           ></textarea>
         </div>
         <div className={classes.form__section}>
