@@ -40,7 +40,10 @@ function ProjectReviewLanding() {
   return (
     <section>
       <h1>Project Review Page</h1>
-      <IndividualProject eachProject={loadedProjects} />
+      <IndividualProject
+        // style={ .project li { width:90% }}
+        eachProject={loadedProjects}
+      />
       <PageWithComments></PageWithComments>
     </section>
   );

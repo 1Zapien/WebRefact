@@ -16,7 +16,7 @@ h1 {
 }
 
 button {
-  background-color: #6998ab;
+  background-color: #406882;
   border: none;
   color: #eff3f2;
   padding: 1rem 2rem;
@@ -24,6 +24,6 @@ button {
 }
 
 button:hover {
-  background-color: #828282;
+  background-color: #298bd0;
   color: #eff3f2;
 }

@@ -1,11 +1,6 @@
 .intro {
   display: flex;
   flex-direction: column-reverse;
-  background-image: url("/src/images/Vector.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain 90%;
-  background-position-y: 1rem;
   display: flex;
   padding: 0rem 2rem;
 }
@@ -16,13 +11,6 @@
   align-items: center;
   justify-content: center;
 }
-.intro__info p {
-  text-align: center;
-  line-height: 1.45rem;
-  font-size: 18px;
-  color: #333533;
-  margin: 0.5rem 0rem;
-}
 
 .intro__title {
   font-weight: 700;
@@ -32,17 +20,30 @@
   margin: 0.5rem 0rem;
 }
 
-.intro__info button {
+.intro__info p {
+  text-align: center;
+  line-height: 1.45rem;
+  font-size: 18px;
+  color: #333533;
+  margin: 0.5rem 0rem;
+}
+.intro__info a {
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
   border: none;
   border-radius: 10px;
-  background-color: #6998ab;
+  background: linear-gradient(90deg, #298bd0 0%, #298bd0 44.79%, #0169c2 100%);
   margin: 1rem;
   padding: 1rem 1.5rem;
   color: #fbfbf2;
   cursor: pointer;
+  filter: drop-shadow(0px 3px 4px rgba(41, 139, 208, 0.55));
 }
-.intro__info button:hover {
-  background-color: #406882;
+
+a.button:hover {
+  background: #0169c2;
+  color: #fbfbf2;
 }
 
 .intro__background {
@@ -53,5 +54,66 @@
 .intro__image {
   align-self: center;
   height: 350px;
-  width: 80%;
+  width: 90%;
+  background-image: url("/src/images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position-y: 1rem;
+}
+
+@media only screen and (min-width: 850px) {
+  .intro__title {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  .intro {
+    flex-direction: row;
+    height: 75vh;
+  }
+
+  .intro__info {
+    max-width: 500px;
+    padding-left: 2rem;
+  }
+
+  .intro__title {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  .intro__info p {
+    text-align: left;
+    line-height: 1.75rem;
+    font-size: 20px;
+  }
+
+  .intro_info {
+    width: 100%;
+  }
+
+  .intro__info a {
+    align-self: flex-start;
+    margin-left: 0rem;
+  }
+
+  a.button:hover {
+    color: #fbfbf2;
+  }
+
+  .intro__info button {
+    margin: 2rem 0rem;
+    font-size: 20px;
+  }
+
+  .intro__background {
+    width: 100%;
+  }
+  .intro__image {
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    background-image: none;
+  }
 }

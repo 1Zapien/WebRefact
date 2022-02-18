@@ -12,23 +12,28 @@
 .nav .logo {
   font-size: 20px;
   font-weight: 700;
+  margin-left: 0rem;
 }
 
 .navigation ul {
   list-style-type: none;
   display: flex;
-  /* flex-direction: column; */
   align-items: baseline;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 .nav li {
   margin-left: 1rem;
+  margin-top: 0.25rem;
 }
 
 .nav a {
+  padding: 0rem 0.5rem;
   text-decoration: none;
   color: #333533;
+  font-size: 1.2rem;
 }
 
 .nav a:hover,
@@ -37,8 +42,19 @@
   color: #6998ab;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 550px) {
+  .nav .logo {
+    font-size: 32px;
+    margin-left: 2rem;
+  }
   .nav ul {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .nav li {
+    margin-top: 0.25rem;
+  }
+  .nav a {
+    font-size: 24px;
   }
 }

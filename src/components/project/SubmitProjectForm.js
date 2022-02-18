@@ -31,7 +31,7 @@ function SubmitProjectForm(props) {
   return (
     <div className={classes.form__card}>
       <form onSubmit={submitHandler} className={classes.form_content}>
-        <h1>Submit your project</h1>
+        <h1>Submit your personal project</h1>
         <div className={classes.form__section}>
           <label htmlFor="project-name">Project Name</label>
           <input
@@ -72,7 +72,7 @@ function SubmitProjectForm(props) {
             placeholder="Enter a short description of you project"
           ></textarea>
         </div>
-        <div className={classes.form__section}>
+        {/* <div className={classes.form__section}>
           <label htmlFor="project-questions">Questions for others?</label>
           <textarea
             id="project-questions"
@@ -80,7 +80,7 @@ function SubmitProjectForm(props) {
             rows="5"
             ref={inputQuestion}
           ></textarea>
-        </div>
+        </div> */}
         <div className={classes.form__submit}>
           <button className={classes.project__submit}>Add Project</button>
         </div>

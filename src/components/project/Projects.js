@@ -7,7 +7,7 @@ function Projects() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedProjects, setLoadedProjects] = useState([]);
   const [postsToShow, setPostsToShow] = useState([]);
-  const [next, setNext] = useState(3);
+  const [next, setNext] = useState(4);
 
   useEffect(() => {
     setIsLoading(true);
@@ -43,12 +43,6 @@ function Projects() {
     },
     [loadedProjects]
   );
-
-  // const loopWithSlice = (start, end) => {
-  //   const slicedProjects = loadedProjects.slice(start, end);
-
-  //   setPostsToShow(slicedProjects);
-  // };
 
   useEffect(() => {
     loopWithSlice(0, postsPerPage);

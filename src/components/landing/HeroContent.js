@@ -11,8 +11,8 @@ function HeroContent() {
           Get feedback on your personal project from other users. Improve your
           coding skills while working on your personal project.
         </p>
-        <Link to="/submit-project">
-          <button type="button">Submit Project</button>
+        <Link to="/submit-project" className={classes.button}>
+          Submit Project
         </Link>
       </div>
       <div className={classes.intro__background}>
