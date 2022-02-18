@@ -6,7 +6,7 @@
   overflow: scroll;
   font-size: 18px;
   display: flex;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
 }
 
 .nav .logo {
@@ -21,7 +21,7 @@
   align-items: baseline;
   padding: 0rem 1rem;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .nav li {
@@ -58,3 +58,5 @@
     font-size: 24px;
   }
 }
+
+/* #406882 button */
