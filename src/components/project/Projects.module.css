@@ -12,11 +12,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 button {
-  background-color: #406882;
+  background-color: #0169c2;
+  /* filter: drop-shadow(0px 3px 4px rgba(41, 139, 208, 0.55)); */
+  background: linear-gradient(
+    90deg,
+    rgba(105, 152, 171, 0.76) 0%,
+    #6998ab 65.62%,
+    #6998ab 100%
+  );
   border: none;
   color: #eff3f2;
   padding: 1rem 2rem;
@@ -24,6 +31,7 @@ button {
 }
 
 button:hover {
-  background-color: #298bd0;
+  /* background-color: #298bd0; */
+  background-color: #406882;
   color: #eff3f2;
 }

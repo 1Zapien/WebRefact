@@ -17,7 +17,7 @@
   font-size: 2.5rem;
   text-align: center;
   color: #333533;
-  margin: 0.5rem 0rem;
+  margin: 1rem 0rem;
 }
 
 .intro__info p {
@@ -33,7 +33,13 @@
   text-decoration: none;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(90deg, #298bd0 0%, #298bd0 44.79%, #0169c2 100%);
+  /* background: linear-gradient(90deg, #298bd0 0%, #298bd0 44.79%, #0169c2 100%); */
+  background: linear-gradient(
+    90deg,
+    rgba(105, 152, 171, 0.76) 0%,
+    #6998ab 65.62%,
+    #6998ab 100%
+  );
   margin: 1rem;
   padding: 1rem 1.5rem;
   color: #fbfbf2;
@@ -42,7 +48,8 @@
 }
 
 a.button:hover {
-  background: #0169c2;
+  /* background: #0169c2; */
+  background: #406882;
   color: #fbfbf2;
 }
 
@@ -111,7 +118,7 @@ a.button:hover {
     width: 100%;
   }
   .intro__image {
-    height: 400px;
+    height: 100%;
     width: 100%;
     text-align: left;
     background-image: none;

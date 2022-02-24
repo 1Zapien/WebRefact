@@ -1,0 +1,33 @@
+.feedback {
+  display: flex;
+  background-color: #63737a;
+  color: white;
+  flex-direction: column;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+.feedback__info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding: 0rem 1rem;
+}
+
+.feedback__info a {
+  color: #ffe779;
+}
+.feedback__info a:hover {
+  color: #fcdb49;
+}
+
+@media only screen and (min-width: 850px) {
+  .feedback {
+    flex-direction: row;
+  }
+
+  .feedback__image {
+    width: 80%;
+  }
+}

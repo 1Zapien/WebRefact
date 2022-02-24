@@ -19,7 +19,7 @@
   list-style-type: none;
   display: flex;
   align-items: baseline;
-  padding: 0rem 1rem;
+  padding: 0rem;
   flex-direction: column;
   margin-top: 1rem;
 }
@@ -39,7 +39,9 @@
 .nav a:hover,
 .nav a:active,
 .nav a.active {
-  color: #6998ab;
+  /* color: #6998ab; */
+  font-weight: "700";
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 550px) {

@@ -1,5 +1,6 @@
 import classes from "./HeroContent.module.css";
-import hero from "../../images/Brainstorming.svg";
+// import hero from "../../images/Brainstorming.svg";
+import hero from "../../images/collaborating.svg";
 import { Link } from "react-router-dom";
 
 function HeroContent() {

@@ -1,13 +1,16 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
+import logo from "../../images/Logo.svg";
 function NavBar() {
   let activeStyle = {
-    color: "#6998ab"
+    // color: "#6998ab"
+    fontWeight: "700"
   };
 
   return (
     <header className={classes.nav}>
-      <div className={classes.logo}>WebRefact</div>
+      <img className={classes.logo} src={logo} alt="Logo" />
+      {/* <div className={classes.logo}>WebRefact</div> */}
       <nav className={classes.navigation}>
         <ul>
           <li>
