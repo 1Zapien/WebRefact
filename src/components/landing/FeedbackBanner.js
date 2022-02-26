@@ -14,7 +14,12 @@ function FeedbackBanner() {
           Code review is a skill that will be useful in future tech jobs so make
           sure your feedback is constructive.
         </p>
-        <a href={"https://google.github.io/eng-practices/review/"}>
+        <a
+          href={"https://google.github.io/eng-practices/review/"}
+          aria-label="link to github page that gives info on giving better feedback"
+          target="_blank"
+          rel="noreferrer"
+        >
           Google coding review guide to provide better feedback
         </a>
       </div>

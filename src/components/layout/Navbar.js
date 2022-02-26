@@ -10,7 +10,6 @@ function NavBar() {
   return (
     <header className={classes.nav}>
       <img className={classes.logo} src={logo} alt="Logo" />
-      {/* <div className={classes.logo}>WebRefact</div> */}
       <nav className={classes.navigation}>
         <ul>
           <li>

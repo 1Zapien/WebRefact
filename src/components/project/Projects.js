@@ -57,7 +57,7 @@ function Projects() {
   }
 
   return (
-    <div className={classes.main}>
+    <div className={classes.main} id="projects">
       <IndividualProject eachProject={postsToShow} />
       <div className={classes.load}>
         <button onClick={handleShowMorePosts}>Load More</button>
