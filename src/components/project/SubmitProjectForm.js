@@ -6,7 +6,7 @@ function SubmitProjectForm(props) {
   const inputUrl = useRef();
   const inputSourceUrl = useRef();
   const inputDescription = useRef();
-  const inputQuestion = useRef();
+  // const inputQuestion = useRef();
 
   function submitHandler(event) {
     event.preventDefault();
@@ -15,14 +15,14 @@ function SubmitProjectForm(props) {
     const projectUrl = inputUrl.current.value;
     const projectSourceUrl = inputSourceUrl.current.value;
     const projectDescription = inputDescription.current.value;
-    const projectQuestion = inputQuestion.current.value;
+    // const projectQuestion = inputQuestion.current.value;
 
     const projectData = {
       name: projectName,
       url: projectUrl,
       sourceUrl: projectSourceUrl,
-      description: projectDescription,
-      questions: projectQuestion
+      description: projectDescription
+      // questions: projectQuestion
     };
 
     props.onSubmitProject(projectData);

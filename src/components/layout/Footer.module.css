@@ -35,11 +35,11 @@ footer {
 .footer li {
   list-style: none;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .short {
-  width: 200px;
+  width: 25npm0px;
   color: #b9b9b9;
 }
 

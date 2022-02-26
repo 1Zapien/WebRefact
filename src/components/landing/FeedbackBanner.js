@@ -6,13 +6,14 @@ function FeedbackBanner() {
     <div className={classes.feedback}>
       <img className={classes.feedback__image} src={bannerImg} alt="Hero"></img>
       <div className={classes.feedback__info}>
-        <h2>Practice for code review</h2>
+        <h2>Practice for Code Review</h2>
         <p>
-          When providing feedback on personal projects here at WebRefact you
-          will also be practicing your Code Reviewing skills. <br />
+          When using WebRefact, not only will you be providing feedback on
+          personal projects, but you will also be practicing your Code Review.{" "}
           <br />
-          Code review is a skill that will be useful in future tech jobs so make
-          sure your feedback is constructive.
+          <br />
+          Code Review is a skill that will be useful in future tech jobs, so
+          make sure your feedback is constructive.
         </p>
         <a
           href={"https://google.github.io/eng-practices/review/"}
