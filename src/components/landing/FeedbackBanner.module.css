@@ -35,10 +35,17 @@
   }
 
   .feedback__image {
-    width: 80%;
+    width: 60%;
+  }
+  .feedback__info {
+    margin: 1rem 3rem;
   }
 
   .feedback__info h2 {
-    margin: 0rem;
+    margin: 1rem 0rem;
+  }
+
+  .feedback__info p {
+    padding-right: 5rem;
   }
 }

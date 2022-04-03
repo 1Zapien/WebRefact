@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column-reverse;
   display: flex;
-  padding: 0rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
 .intro__info {
@@ -75,6 +75,7 @@ a.button:hover {
   .intro {
     flex-direction: row;
     height: 75vh;
+    margin: 4rem 0rem;
   }
 
   .intro__info {
