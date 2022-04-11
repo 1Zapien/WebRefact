@@ -75,7 +75,7 @@ a.button:hover {
   .intro {
     flex-direction: row;
     height: 75vh;
-    margin: 4rem 0rem;
+    margin: 2rem 0rem;
   }
 
   .intro__info {
