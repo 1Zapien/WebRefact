@@ -4,6 +4,7 @@ WebRefact is a React web app I built where developers can get feedback on their 
 
 
 <p align="center">
+  <a href="https://gitpoint.co/">
   <img width="300" src="https://github.com/1Zapien/WebRefact/blob/main/src/images/webRgit.png" alt="WebRefact sample img
-                                                                                                    ">
+                                                                                                    "></a>
 </p>
